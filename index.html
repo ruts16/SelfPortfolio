@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat&family=Freeman&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      flex-direction: column;
+      /* Arranges content vertically */
+
+      background-color: rgb(218, 196, 196);
+      color: white;
+      font-family: "Poppins", sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: rgb(3, 3, 3);
+    }
+
+    nav .left {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav .right ul {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      /* Adds space between li items */
+      list-style: none;
+    }
+
+    nav .right ul li a {
+      text-decoration: none;
+      /* Removes underline */
+      color: white;
+    }
+
+    nav .right ul li a:hover {
+      color: rgb(167, 96, 131);
+      /* Change color on hover */
+      font-size: 1.02rem;
+    }
+
+    .firstSection {
+      display: flex;
+      justify-content: space-between;
+      /* Ensures space between left and right sections */
+      align-items: center;
+      margin: 23px 0;
+      padding: 20px;
+    }
+
+    .forthSection {
+      display: flex;
+      justify-content: space-between;
+      /* Ensures space between left and right sections */
+      align-items: center;
+      margin: 23px 0;
+      padding: 20px;
+    }
+
+    .forthSection .rightSection {
+      flex: 1;
+      /* Ensures both sections take equal space */
+      padding: 20px;
+      /* background-color: #aa5a5a; */
+      color: black;
+      text-align: left;
+      margin: 0 10px 0 50px;
+      font-size: 3rem;
+    }
+
+    .leftSection,
+    .rightSection {
+      flex: 1;
+      /* Ensures both sections take equal space */
+      padding: 20px;
+      /* background-color: #aa5a5a; */
+      color: black;
+      text-align: left;
+      margin: 0 10px 0 50px;
+      font-size: 3rem;
+    }
+
+    .forthSection .rightSection img {
+      width: 40%;
+      margin: 20px 20;
+      border-radius: 50%;
+    }
+
+    .rightSection img {
+      width: 80%;
+      margin: 20px 20;
+      border-radius: 50%;
+    }
+
+    .purple {
+      color: rgb(148, 12, 87);
+    }
+
+    .secondSection {
+      max-width: 80vw;
+      margin: auto;
+    }
+
+    .thirdSection {
+      max-width: 80vw;
+      margin: auto;
+      margin-top: 20px;
+    }
+
+    .secondSection,
+    .thirdSection,
+    .forthSection h1 {
+      color: black;
+
+    }
+
+    main hr {
+      height: 1.2px;
+      margin: 40px 84px;
+    }
+
+    .text-gray {
+      color: rgb(110, 109, 109);
+    }
+
+    .secondSection .box {
+      background: rgb(168, 162, 162);
+      width: 78vw;
+      height: 0.2px;
+      margin: 68px 0;
+      margin-left: 50px;
+    }
+
+    .thirdSection .box {
+      background: rgb(168, 162, 162);
+      width: 60vw;
+      height: 2px;
+      margin: 56px 0;
+      display: flex;
+    }
+
+    .thirdSection .box .vertical {
+      height: 73px;
+      display: flex;
+      width: 1px;
+      background: rgb(168, 162, 162);
+      margin: 0 100px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .leftSection2 {
+      flex: 1;
+      /* Ensures both sections take equal space */
+      padding: 20px;
+      /* background-color: #aa5a5a; */
+      color: black;
+      font-size: 1rem;
+    }
+
+    .leftSection3 {
+      flex: 1;
+      /* Ensures both sections take equal space */
+      /* background-color: #aa5a5a; */
+      color: black;
+      font-size: 1rem;
+      background-image: url('');
+    }
+
+    .image-top {
+      width: 45px;
+      position: relative;
+      top: -50px;
+      left: -3px;
+    }
+
+    .vertical-title {
+      position: relative;
+      top: 30px;
+      flex-direction: column;
+      width: 150px;
+      color: black;
+      font-size: 10px;
+
+    }
+
+    footer {
+      background-color: #0f0f0f;
+      color: black;
+      padding: 20px;
+      text-align: left;
+      margin-top: auto;
+      height: 190px;
+
+    }
+
+    .footer {
+      color: white;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer ul li {
+      margin-bottom: 10px;
+      /* Adjust the value as needed */
+    }
+
+    .footer-first {
+      margin-top: 20px;
+      font-size: 1.5rem;
+    }
+
+    .footer-second {
+      font-size: 10px;
+      color: white;
+
+    }
+
+    .footer-second li a {
+      color: white;
+      text-decoration: none;
+
+
+    }
+
+
+    .footer-third {
+      font-size: 10px;
+      color: white;
+
+    }
+
+    .footer-third li a {
+      color: white;
+      text-decoration: none;
+
+
+    }
+
+    .footer-second a:hover {
+      color: #b98989;
+    }
+
+    .footer-third a:hover {
+      color: #b98989;
+    }
+
+    .social-media {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 8px;
+    }
+
+    .social-icon {
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .social-icon:hover {
+      color: #c97f9b;
+      /* Highlight color on hover */
+      transform: scale(1.2);
+      /* Slight zoom effect */
+    }
+
+    footer .footer-rights {
+      margin-top: 20px;
+      text-align: center;
+      color: grey;
+    }
+
+
+    .leftSection .btn {
+      padding: 12px;
+      background-color: #af8282;
+      border: 2px solid rgb(138, 60, 73);
+      border-radius: 30px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .container {
+      display: flex;
+      /* Makes the container a flex container */
+      width: 100%;
+      /* Full width of the screen */
+      height: 300px;
+      /* Set height as needed */
+
+    }
+
+    .section {
+      margin: 40px 40px 40px 40px;
+      flex: 1;
+      /* Both sections take equal width */
+      padding: 20px;
+      /* Add some spacing */
+    }
+
+    .left1 {
+      background-color: #aa8282;
+      float: left;
+    }
+
+    .intern-box {
+      position: relative;
+      background-color: #d2a6a6;
+      /* Adjust the background color as per your design */
+      padding: 20px;
+      border-radius: 10px;
+
+    }
+
+    .intern-box img {
+      border-radius: 50%;
+      position: absolute;
+      bottom: -20px;
+      /* Adjust to position at the corner */
+      right: -20px;
+      /* Adjust to position at the corner */
+      width: 120px;
+      /* Make the image bigger */
+      height: 120px;
+      /* Maintain size consistency */
+      border-radius: 50%;
+      /* Ensure the image stays circular */
+      border: 4px solid white;
+      /* Optional: Add a border for better visibility */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      /* Optional: Add a shadow effect */
+
+
+    }
+
+    .intern-box #img {
+      border-radius: 50%;
+      position: absolute;
+      bottom: -20px;
+      /* Adjust to position at the corner */
+      right: -70px;
+      /* Adjust to position at the corner */
+      width: 120px;
+      /* Make the image bigger */
+      height: 120px;
+      /* Maintain size consistency */
+      border-radius: 50%;
+      /* Ensure the image stays circular */
+      border: 4px solid white;
+      /* Optional: Add a border for better visibility */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      /* Optional: Add a shadow effect */
+
+
+    }
+
+    .buttons .btn a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .buttons .btn a:hover {
+      color: #552727;
+    }
+
+    .collage ul {
+    display: flex; /* Use flexbox for horizontal alignment */
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.collage ul li {
+    margin: 0 10px; /* Add spacing between images */
+}
+
+.collage ul li img {
+  margin-top: 20px;
+   height: 250px;
+    object-fit:contain; 
+    align-items: center;
+}
+
+.collage img:hover{
+	box-shadow: 0px 3px 12px 0px #792f2f;
+	border: 1px solid transparent;
+}
+.collage img::before{
+	content: '';
+	position: absolute;
+	
+	border-radius: 50%;
+	right: calc(100% + 22px);
+	top: 0;
+	background-color: #111312;
+	
+}
+
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- --------------------------------HEADER SECTION----------------------------------- -->
+  <header>
+    <nav>
+      <div class="left">Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#objective">Ojective</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#internship">Internships</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+          <li><a href="#certification">Certifications</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- --------------------------------MAIN SECTION ------------------------------ -->
+  <main>
+    <!-- FIRST SECTION -->
+    <section class="firstSection" id="home">
+      <div class="leftSection">
+        My Name Is <b> <span class="purple"> Rutuja</span></b> ,
+        <div>I Am A</div>
+        <div>
+          <b><i>"Full Stack Developer"</i></b>
+        </div>
+        <span id="element"></span>
+        <div class="buttons">
+          <button class="btn"><a href="RutujaPandharpatte_FullStackDeveloper.pdf" download
+              class="download-btn"><b>Download Resume</b></a>
+          </button>
+
+          <button class="btn"><a href="https://github.com/ruts16"><b>Visit Github</b></a></button>
+        </div>
+      </div>
+      <div class="rightSection">
+        <img src="https://i.pinimg.com/736x/80/44/a7/8044a7274a603e2593400691912fb683.jpg" alt="" />
+      </div>
+    </section>
+
+    <hr>
+    <!-- SECOND SECTION -->
+    <section class="secondSection" id="objective">
+      <span class="text-gray">
+        <i>"Ambitious towards my work"</i>
+      </span>
+      <h1>Career Objective</h1>
+      <div class="leftSection2">
+        "Highly skilled and motivated Full Stack Developer with a strong
+        passion for creating innovations web applications and solutions.<br />
+        Seeking a challenging position where I can utilize my technical
+        expertise and contribute to the success of a dynamic and progressive
+        organization"
+      </div>
+    </section>
+    <hr />
+    <!-- THIRD SECTION -->
+    <section class="thirdSection" >
+      <span class="text-gray">
+        <i>"Fostering professional competencies through continuous learningand adaptation"</i>
+      </span>
+      <h1>Technical Skills</h1>
+      <section>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="lang.png" alt="" />
+            <div class="vertical-title">
+              C <br />
+              CPP <br />
+              JAVA <br />
+              PYTHON <br />
+              HTML 5/3 <br />
+              CSS 3 <br />
+              JAVASCRIPT <br />
+              SQL / MYSQL
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="framework.webp" alt="" />
+            <div class="vertical-title">
+              BOOTSTRAP <br />
+              REACT JS <br />
+              DJANGO
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="https://cdn-icons-png.flaticon.com/512/5741/5741483.png" alt="" />
+            <div class="vertical-title">
+              VS CODE <br />
+              MYSQL WORKBENCH <br />
+              SSMS <br />
+              IDLE <br />
+              NETBEANS <br />
+              ECLIPSE
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjslBawmjjnV_yROkk1CyrGyOaKt9WpAUyCQ&s"
+              alt="" />
+            <div class="vertical-title">
+              SDLC <br />
+              AGILE<br />
+              SCRUM <br />JIRA
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+
+    <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+    <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+    <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+    <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+    <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+    <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+    <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+    <hr>
+    <!-- FOURTH SECTION -->
+    <section class="forthSection" id="education">
+      <div class="rightSection">
+        <img style="margin-left: 30px;" src="education.png" alt="Education Icon" />
+      </div>
+      <div class="leftSection3">
+        <span class="text-gray">
+          <i>"An investment in knowledge pays the best interest."</i>
+        </span>
+        <h1 style="font-size: 2rem;">Education</h1>
+        <p>
+          I have pursued a Bachelor’s degree in Computer Science, where I developed
+          a strong foundation in programming, software development, and web
+          technologies. My education has helped me foster problem-solving skills,
+          creativity, and a growth-oriented mindset.
+        </p>
+        <h4><b>ADARSH INSTITUTES OF TECHNOLOGY AND RESEARCH CENTER ,VITA <BR> (B.TECH DEGREE) | (2020-2024)</b></h2>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- -------------------------------------------------------------------------- -->
+    <section class="secondSection" id="internship">
+      <span class="text-gray">
+        <i>"The expert in anything was once a beginner."</i>
+      </span>
+      <h1 style="font-size: 2rem;">Internships</h1>
+      <div class="container">
+        <!-- Left Section -->
+        <div class="section left1">
+          <h2>Aadi Technology,Pune</h2>
+          <h2 style="font-size: 1rem; color: rgb(54, 54, 54);">Full Stack Developer | 6 months </h2>
+          <p style="font-size: 14px;">
+            - Proficient in developing and debugging responsive software applications , emphasizing client interaction. <br>
+            - Backend expertise in <b>ASP.NET</b> paired with <b> MYSQL database management</b>. <br>
+            - Skilled in frontend development using React.js to create dynamic user interfaces.Experineced in implementing <b>Agile methodologies</b> 
+             &nbsp; &nbsp;for effective sprint planning and interactive developement cycles.
+          <h2 style="font-size: 1rem; color: rgb(54, 54, 54);">Proficiency </h2>
+              Proficiency in React.js, ASP.NET, and MySQL for comprehensive software solutions.
+           </p>
+          
+
+        </div>
+
+        <div class="intern-box">
+          <img
+            src="data:image/png;base64,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"
+            alt="">
+        </div>
+
+      </div>
+
+      <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+      <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+      <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+      <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+
+      <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+      <div class="container">
+        <div class="intern-box">
+          <img id="img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK2-ZT6QqAriWBDg8D40cYm0AAcguWn1QbEw&s" alt="">
+        </div>
+        <!-- Left Section -->
+        <div class="section left1">
+          <h2>Vishwa Technologies , Karad</h2>
+          <h2 style="font-size: 1rem; color: rgb(54, 54, 54);">Web Developer and Design Intern | 3 months </h2>
+          <p style="font-size: 14px;">
+           - Expert in error checking and debugging websites to ensure seamless functionality. <br>
+           - Engaging in client interaction to discuss project requirements and updates.<br>
+           - Ensuring website responsiveness across various devices and screen sizes.<br>
+          
+          </p>
+          <h2 style="font-size: 1rem; color: rgb(54, 54, 54);">Proficiency </h2>
+          Proficiency in React.js, ASP.NET, and MySQL for comprehensive software solutions.
+       </p>
+
+        </div>
+
+
+
+      </div>
+
+      <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+      <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+      <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+      <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+
+      <!-- ----------------------------------------------------------------------------------------- -->
+      <div class="container">
+
+        <!-- Left Section -->
+        <div class="section left1">
+          <h2>Code Clause</h2>
+          <h2 style="font-size: 1rem; color: rgb(54, 54, 54);">Web Developer  Intern | 1 month </h2>
+          <p style="font-size: 14px;">
+           - Implementing responsive design principles to ensure optimal viewing experiences across devices.<br>
+           - Collaborating with team members to troubleshoot and resolve technical issues.<br>
+           - Assisting in the design and implementation of user interfaces for web applications.<br>
+           - Testing and debugging code to ensure seamless functionality.<br>
+           
+            
+          </p>
+          <h2 style="font-size: 1rem; color: rgb(54, 54, 54);">Proficiency </h2>
+          Utilizing HTML, CSS, and JavaScript and Bootstrap to create dynamic and interactive web content.
+        </p>
+        </div>
+        <div class="intern-box">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyCbU0AciZmizmv4udDN25BTejwqDjzBBkCw&s"
+            alt="">
+        </div>
+
+
+      </div>
+
+      <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+      <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+      <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+      <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+
+      <!-- ---------------------------------------------------------------------------  -->
+      <div class="container">
+        <div class="intern-box">
+          <img id="img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUrfbDZzNQ-VacZvqzuiClWxN_QYzhoCjTPQ&s" alt="">
+        </div>
+        <!-- Left Section -->
+        <div class="section left1">
+          <h2>Osasis Infobyte</h2>
+          <h2 style="font-size: 1rem; color: rgb(54, 54, 54);">Web Developer  Intern | 1 month </h2>
+          <p style="font-size: 14px;">
+           - Implementing responsive design principles to ensure optimal viewing experiences across devices.<br>
+           - Collaborating with team members to troubleshoot and resolve technical issues.<br>
+           - Assisting in the design and implementation of user interfaces for web applications.<br>
+           - Testing and debugging code to ensure seamless functionality.<br>
+           
+            
+          </p>
+          <h2 style="font-size: 1rem; color: rgb(54, 54, 54);">Proficiency </h2>
+          Utilizing HTML, CSS, and JavaScript and Bootstrap to create dynamic and interactive web content.
+        </p>
+        </div>
+
+
+
+      </div>
+
+      <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+      <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+      <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+      <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+
+    </section>
+<hr>
+
+    <!-- ----------------------------------------------------- -->
+    <div class="container1">
+	
+      <main class="row">
+        
+        <!--   *******  Education Section Starts  *******   -->
+    
+        <section class="col">
+          
+          <header class="title">
+            <h2>PROJECTS</h2>
+          </header>
+    
+          <div class="contents">
+            
+            <div class="box">
+              <h5>HTML | CSS |JS | BOOTSTRAP | SQL | PYTHON | DJANGO</h4>
+              <h3><b>E-COMMERCE WEBSITE</b></h3>
+              <p>
+                A Full Stack E-commerce website integrating email and secure payments.Implemented features for browsing products ,adding items to cart and seamless checkout process.
+              </p>
+            </div>
+    
+            <div class="box">
+              <h5>HTML | CSS |JS | BOOTSTRAP | SQL | PYTHON | DJANGO</h5>
+              <h3>MUSIC WEBSITE</h3>
+              <p>
+                A Full-Stack Music Website enabling users to listen to songs, create playlists, share music frineds. Implemented features for user authentication , allowing personalized experiences and playlist management.
+              </p>
+            </div>
+    
+            <div class="box">
+              <h5>ASP.NET | CSS | REACT JS | MATERIAL UI | MYSQL </h5>
+              <h3>CRM +ERP MODEL FOR PRESCHOOL</h3>
+              <p>
+                Full-Stack Software that provides customer relationship management and Enterprise Resourse Planning with a user-friendly platform.
+                To automate the admission process and ease the student teacher interaction through the online mode.
+              </p>
+            </div>
+
+            <div class="box">
+              <h5>HTML | CSS |JS | BOOTSTRAP | SQL </h5>
+              <h3>NGO MANAGEMENT SYSTEM</h3>
+              <p>
+                Website to provide a solution to problems that non governmental organizations face while spreading awareness amoung society.
+              </p>
+            </div>
+    
+          </div>
+        </section>
+    
+        <!--   *******  Education Section Ends  *******   -->
+    
+        <!--   *******  Experience Section Starts  *******  -->
+    
+        <section class="col">
+          
+          <header class="title">
+            <h2>Certifications</h2>
+          </header>
+    
+          <div class="contents">
+            
+            <div class="box">
+              <h5>IT VEDANT COMPUTER INSTITUTE</h5>
+              <h3>MASTER IN FULL STACK DEVELOPMENT </h3>
+
+            </div>
+    
+            <div class="box">
+              <h5>IBM CERTIFICATION</h5>
+              <h3>PYTHON FOR DEVELOPMENT</h3>
+            </div>
+    
+            <div class="box">
+              <h5>DISHA COMPUTER INSTITUTES</h5>
+              <h3>C | CPP | JAVA | PYTHON | SQL SERVER | MYSQL</h3>
+            </div>
+
+            <div class="box">
+              <h5>UNIQUE SOFTWARES</h5>
+              <h3>ANDROID APP DEVELOPMENT |JAVA |XML</h3>
+            </div>
+    
+          </div>
+        </section>
+        
+    
+        <!--   *******  Experience Section Ends   *******  -->
+      </main> 
+      
+    </main>
+    <hr style="margin-left: 40px;margin-right: 40px;">
+
+    <section class="secondSection" style="margin-top: 20px;" id="certification">
+      <span class="text-gray">
+        <i>"The expert in anything was once a beginner."</i>
+      </span>
+      <h1 style="font-size: 2rem;">Certificates</h1>
+      <div class="collage">
+        <ul>
+          <li class="box1">
+            <img src="Itvedant_WebDesignCertificate.jpg" alt="">
+          </li>
+          <li class="box1">
+            <img src="profilebuildingbonuslessons_197_1724160767.jpg" alt="">
+          </li>
+          <li class="box1">
+            <img src="advancedwebdesigning_182_1724160790.jpg" alt="">
+          </li>
+        </ul>
+        <ul>
+          <li class="box1">
+            <img src="sql_bonus.png" alt="">
+          </li>
+          <li class="box1">
+            <img src="programming.png" alt="">
+          </li>
+          <li class="box1">
+            <img src="final.png" alt="">
+          </li>
+        </ul>
+        <ul>
+          <li class="box1">
+            <img src="ibm.png" alt="">
+          </li>
+          <li class="box1">
+            <img src="hackerrank.png" alt="">
+          </li>
+          <li class="box1">
+            <img src="osasis.png" alt="">
+          </li>
+        </ul>
+        <ul>
+          <li class="box1">
+            <img src="tcs1.png" alt="">
+          </li>
+          <li class="box1">
+            <img src="tcs2.png" alt="">
+          </li>
+          <li class="box1">
+            <img src="disha.png" alt="">
+          </li>
+        </ul>
+
+        
+      </div>
+    </section>
+  <!-- -------------------------------FOOTER----------------------------------------- -->
+  <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+  <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+  <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+  <section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</section>
+ 
+ 
+ 
+
+  <!-- ----------------------------------- -->
+  <footer id="contact">
+    <div class="footer">
+      <div class="footer-first">
+        <h3>My Portfolio</h3>
+      </div>
+
+      <div class="footer-second">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Career Objective</a></li>
+          <li><a href="">Technical Skills</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-third">
+        <ul>
+          <li><a href="">Internships</a></li>
+          <li><a href="">Certifications</a></li>
+          <li><a href="">Achievements</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-fourth">
+        <h3>Contact Me At</h3>
+
+        <div class="social-media">
+
+          <a href="https://www.linkedin.com/in/rutuja-pandharpatte-4a479b212/" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+          <a href="https://github.com/ruts16" target="_blank" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a href="https://www.hackerrank.com/profile/ruts1617" target="_blank" class="social-icon">
+            <i class="fas fa-code"></i>
+          </a>
+        </div>
+
+        <a href="mailto:ruts1617@gmail.com" class="social-icon" style="font-size: 15px;">
+          <i class="fas fa-envelope"></i> ruts1617@gmail.com
+        </a>
+         <br>
+        <a href="#" class="social-icon" style="font-size: 15px;">
+          <i class="fas fa-phone"></i> +91 9518560911
+        </a>
+
+      </div>
+    </div>
+    <div class="footer-rights">
+      Rutuja Pandharpatte Portfolio | All rights reservered
+    </div>
+  </footer>
+  <!-- --------------------------------JS------------------------------------------- -->
+  <script>
+    // script.js
+    document.querySelector('.download-btn').addEventListener('click', () => {
+      alert('Your resume is being downloaded. Thank you for your interest!');
+    });
+
+  </script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed("#element", {
+      strings: ["Web Developer", "Python Developer", "Software Developer"],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+</html>
